@@ -1,0 +1,168 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body id="canvas_div_pdf" >
+    <div  class="container">
+        <divclass="container" >
+            <div class="row">
+              
+              <div class="col">
+                <br>
+                {{!-- <img src="./img/GetWaggingLogo_280x@2x.png" alt="" srcset="" width="60%" height="30%"> --}}
+                <img src="/image/GetWaggingLogo_280x@2x.png" alt="" srcset="" width="33%" height="15%">
+                <h3>Get Wagging Ltd.</h3>
+                <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>  Austin,Texas,USA</h6>
+                <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg><!--  Contact : -->+1 650-260-5893</h6>
+                <h6><!-- Email : --><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg> info@getwagging.com</h6>
+                <br>
+                <br>
+                {{!-- <h6>Invoice Date :07-12-2021</h6> --}}
+                <h6>{{this.invoice_date}}</h6>
+                <h6>Terms : Payment Receipt</h6>
+                
+            </div>
+            <div class="col">
+              <br>  <br> <br>
+              <h5>Bill To</h5>
+              <h5>{{data.name}}</h5>
+              <!-- <h5>User ID:C03010809</h5> -->
+              <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg> {{data.mobile_number}}</h6>
+              <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+              </svg> {{data.email}}</h6>
+              <h6><!-- Address : --><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg> {{data.location}}</h6>
+            </div>
+            </div>
+            <br></br>
+            <div class="row">
+              {{!-- <script type"text/javasscript"> --}}
+               {{!-- console.log(jdata) --}}
+              {{!-- </script> --}}
+              {{!-- <h1>hii{{title}}</h1> --}}
+              {{!-- {{#each data}} --}}
+              {{!-- <h1>hiii{{data.name}}</h1> --}}
+              {{!-- {{/each}} --}}
+                <table class="table ">
+                    <thead>
+                      <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">ITEM DESCRIPTION</th>
+                        <th scope="col">PRICE</th>
+                        <th scope="col">QTY.</th>
+                        <th scope="col">TOTAL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">{{data.serial_no}}</th>
+                        <td>{{data.item_description}}</td>
+                        <td>{{data.price}}</td>
+                        <td>{{data.qty}}</td>
+                        <td>{{data.total}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td>Sub Total</td>
+                        <td>{{data.total}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td>{{data.total}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+          <div class="row">
+              <h6>Thank You For Your Business</h6>
+              <div class="col">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <!-- <th scope="col">#</th> -->
+                      </tr>
+                    </thead>
+                    <!-- <tbody>
+                      <tr>
+                        <td>Transaction Type : Purchase</td>
+                      </tr>
+                      <tr>
+                        <td>Card Type : MB</td>
+                      </tr>
+                      <tr>
+                        <td>Card Number : 01677240979</td>
+                      </tr>
+                      <tr>
+                        <td>Bank Authorize Id:8L7057RV1Y</td>
+                      </tr>
+                      <tr>
+                        <td>BDT Amount:800.00Taka</td>
+                      </tr>
+                      <tr>
+                        <td>Card Number : 01677240979</td>
+                      </tr>
+                    </tbody> -->
+                  </table>
+              </div>
+              <div class="col">
+            </div>
+            <div class="col">
+            </div>
+            <h4>If Any Questions?</h4>
+            <h6>Call us in our helpline number at +1 650-260-5893. Thank you for being with Get Wagging.</h6>
+            </div>
+      </div>
+
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+   <script>
+
+ var element = document.getElementById('canvas_div_pdf');
+html2pdf(element,{
+  margin:       10,
+  filename:     'myfile.pdf',
+  image:        { type: 'jpeg', quality: 1.00 },
+  html2canvas:  { scale: 2, logging: true, dpi: 300, letterRendering: true },
+  jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+});
+</script>
+
+
+  </body>
+</html>
